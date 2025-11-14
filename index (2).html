@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your 2024 Income Kit - Verification Required</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6; /* Blue-500 */
+            --accent-color: #10b981;  /* Emerald-500 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate-900 */
+            color: #f8fafc; /* Slate-50 */
+        }
+        /* Custom pulsing for the CTA button */
+        @keyframes pulse-once {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .cta-button {
+            animation: pulse-once 2s infinite;
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.5); /* Shadow matching accent color */
+        }
+        /* Style for the simulated progress bar */
+        .progress-bar-container {
+            height: 10px;
+            background-color: #1e293b; /* Slate-800 */
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: var(--primary-color);
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center">
+
+    <!-- Main Content Container -->
+    <main class="w-full max-w-xl mx-auto p-4 md:p-8">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-white">
+                <span class="text-blue-400">ACCESS GRANTED:</span> High-Value Income Accelerator Kit
+            </h1>
+        </header>
+
+        <!-- Dynamic Verification Box (Simulated Pre-sell) -->
+        <div id="verification-box" class="bg-gray-800 p-6 rounded-xl shadow-2xl transition-all duration-500">
+            <div class="flex items-center space-x-3 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.398 17c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <h2 class="text-xl font-semibold text-white">Security Verification in Progress...</h2>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-bar-container mb-3">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+
+            <p id="progress-text" class="text-sm text-gray-400 mb-6 transition-opacity duration-500">Analyzing traffic source data...</p>
+
+            <!-- Dynamic Social Proof -->
+            <div class="flex items-center justify-between text-sm text-gray-300 border-t border-gray-700 pt-4">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent-color" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                    </svg>
+                    <span id="active-users">12</span> users online claiming their kit.
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM5 9a1 1 0 000 2h10a1 1 0 100-2H5z" clip-rule="evenodd" />
+                    </svg>
+                    <span id="countdown-timer">05:00</span> Time remaining for claim.
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer Details / Body Content -->
+        <div id="offer-details" class="mt-8 space-y-4 text-center">
+            <h3 class="text-2xl font-bold text-accent-color">Unlock Your Guaranteed $100+ Payout Blueprint!</h3>
+            <p class="text-gray-300">This CPA Income Kit contains the **exact funnels, high-converting copy, and traffic strategies** used to generate over 6 figures this year. This is your definitive blueprint for success in 2024.</p>
+            
+            <!-- Value Prop Bullet Points -->
+            <ul class="text-left mx-auto max-w-sm space-y-3 pt-4 pb-6">
+                <li class="flex items-start text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 mr-2 mt-1 text-accent-color" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    **Zero Experience Required:** Beginner-friendly step-by-step training.
+                </li>
+                <li class="flex items-start text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 mr-2 mt-1 text-accent-color" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    **Instant Access:** Download the highest-converting Email and Ad Copy templates.
+                </li>
+                <li class="flex items-start text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 mr-2 mt-1 text-accent-color" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    **Guaranteed Consistency:** Follow the roadmap to scale your campaigns immediately.
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a id="cta-button-link" href="#" class="inline-block cta-button w-full md:w-3/4 py-4 mt-6 bg-accent-color hover:bg-emerald-600 text-white text-xl font-bold rounded-xl transition duration-300">
+                YES! Unlock My Income Accelerator Kit Now
+            </a>
+
+            <!-- Footer Compliance / Trust Badge -->
+            <div class="mt-8 text-xs text-gray-500">
+                <p>Protected by 256-bit SSL Security. Offer valid only for qualified traffic sources. (ID: <span id="user-id"></span>)</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Exit Intent Modal (Hidden by default) -->
+    <div id="exit-modal" class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center hidden">
+        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl max-w-lg mx-4 border-2 border-red-500 transition-all duration-300">
+            <h4 class="text-3xl font-extrabold text-red-400 mb-4">WAIT! Don't Leave This Page!</h4>
+            <p class="text-gray-300 mb-6 text-lg">Your verification is complete, but this **exclusive offer** is about to expire. If you close this window, you will lose your spot and the free access kit.</p>
+            <a href="#" id="modal-cta" class="inline-block w-full py-3 bg-red-600 hover:bg-red-700 text-white text-xl font-bold rounded-lg transition duration-300">
+                Finish Verification & Get The Kit
+            </a>
+            <button id="close-modal" class="mt-3 w-full text-sm text-gray-400 hover:text-white">No, I want to leave this opportunity.</button>
+        </div>
+    </div>
+
+    <script>
+        // --- Dynamic JavaScript Logic ---
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            const countdownEl = document.getElementById('countdown-timer');
+            const activeUsersEl = document.getElementById('active-users');
+            const userIdEl = document.getElementById('user-id');
+            const ctaLink = document.getElementById('cta-button-link');
+            const exitModal = document.getElementById('exit-modal');
+            const modalCta = document.getElementById('modal-cta');
+            const closeModal = document.getElementById('close-modal');
+
+            // 1. Fake Verification / Progress Bar Simulation
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.floor(Math.random() * (15 - 5 + 1) + 5); // Add a random increment
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(progressInterval);
+                    progressText.textContent = 'Verification Complete. Accessing download page...';
+                    progressText.classList.add('text-accent-color');
+                    progressBar.style.backgroundColor = 'var(--accent-color)';
+                } else if (progress < 50) {
+                    progressText.textContent = 'Analyzing traffic source data...';
+                } else if (progress < 85) {
+                    progressText.textContent = 'Securing connection and preparing kit...';
+                }
+                progressBar.style.width = progress + '%';
+            }, 500);
+
+            // 2. Countdown Timer Logic (5 minutes)
+            let timeInSeconds = 5 * 60; 
+            const timerInterval = setInterval(() => {
+                const minutes = String(Math.floor(timeInSeconds / 60)).padStart(2, '0');
+                const seconds = String(timeInSeconds % 60).padStart(2, '0');
+                countdownEl.textContent = `${minutes}:${seconds}`;
+
+                if (timeInSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    countdownEl.textContent = 'EXPIRED';
+                    ctaLink.textContent = 'OFFER EXPIRED - Click to Check Availability';
+                    ctaLink.classList.remove('bg-accent-color');
+                    ctaLink.classList.add('bg-red-600', 'hover:bg-red-700');
+                    ctaLink.classList.remove('cta-button'); // Stop pulsing
+                }
+                timeInSeconds--;
+            }, 1000);
+
+            // 3. Dynamic Social Proof (Active Users)
+            const baseUsers = Math.floor(Math.random() * (35 - 17 + 1) + 17); // Random start 17-35
+            let currentUsers = baseUsers;
+            activeUsersEl.textContent = currentUsers;
+
+            const userInterval = setInterval(() => {
+                const change = Math.random() > 0.5 ? 1 : -1;
+                currentUsers += change;
+                if (currentUsers < 15) currentUsers = 15; // Minimum 15 users
+                if (currentUsers > 50) currentUsers = 50; // Maximum 50 users
+
+                activeUsersEl.textContent = currentUsers;
+            }, 5000);
+
+            // 4. Generate and Display Fake User ID
+            userIdEl.textContent = crypto.randomUUID().substring(0, 8); // Display first 8 chars
+
+            // 5. CTA Click Handling (Use a real CPA offer link here)
+            const offerLink = "YOUR_CPA_OFFER_LINK_HERE"; // IMPORTANT: REPLACE THIS
+            ctaLink.href = offerLink;
+            modalCta.href = offerLink;
+
+            // 6. Exit Intent (Desktop Only - using mouseout)
+            document.addEventListener('mouseout', (e) => {
+                // Check if the mouse is leaving the top of the browser window
+                if (!e.relatedTarget && e.toElement && e.toElement.nodeName === 'HTML') {
+                    if (sessionStorage.getItem('exitIntentShown') !== 'true') {
+                        exitModal.classList.remove('hidden');
+                        sessionStorage.setItem('exitIntentShown', 'true'); // Only show once per session
+                    }
+                }
+            });
+
+            // 7. Exit Intent Close Button
+            closeModal.addEventListener('click', () => {
+                exitModal.classList.add('hidden');
+            });
+
+            // Fallback for mobile (using window blur event, less reliable but helpful)
+            window.addEventListener('blur', () => {
+                if (window.innerWidth < 1024) { // Assume mobile/tablet
+                     if (sessionStorage.getItem('exitIntentShown') !== 'true') {
+                        // Small delay to prevent immediate pop on app switch
+                        setTimeout(() => {
+                             exitModal.classList.remove('hidden');
+                             sessionStorage.setItem('exitIntentShown', 'true');
+                        }, 500);
+                    }
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
